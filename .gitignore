@@ -1,0 +1,8 @@
+node_modules
+.astro
+dist
+validation\edge-profile
+.DS_Store
+.env
+.env.*
+!.env.example

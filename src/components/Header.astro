@@ -1,0 +1,34 @@
+---
+import ThemeSwitch from './ThemeSwitch';
+import EasterEggLauncher from './EasterEggLauncher';
+---
+<header class="site-header" aria-label="Primary navigation">
+  <div class="pill">
+    <a class="brand" href="#top" aria-label="Misha Narbekov home"><span>MN</span><small>AI-assisted systems</small></a>
+    <nav><a href="#">Personal</a><a href="#system">System</a><a href="#projects">Projects</a></nav>
+    <EasterEggLauncher client:load />
+    <ThemeSwitch client:load />
+  </div>
+</header>
+<style>
+.site-header { position: fixed; top: 14px; left: 50%; z-index: 20; width: min(calc(100% - 84px), 1136px); transform: translateX(-50%); }
+.pill { display: flex; align-items: center; gap: 22px; padding: 10px 22px; border: 1px solid var(--hairline); border-radius: 999px; background: rgba(11,13,16,.72); backdrop-filter: blur(22px); box-shadow: 0 12px 40px rgba(0,0,0,.32); }
+.pill > nav { margin-left: auto; }
+:root[data-theme="light"] .pill { background: rgba(247,249,251,.82); box-shadow: 0 12px 40px rgba(80,120,160,.14); }
+.brand { display: inline-flex; align-items: center; gap: 10px; width: fit-content; }
+.brand span { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--accent-line); border-radius: 50%; color: var(--title); font-family: var(--font-display); font-size: .85rem; letter-spacing: -.04em; }
+.brand small, nav a { color: var(--muted); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; }
+nav { display: flex; gap: 20px; min-width: 0; }
+nav a { position: relative; padding: 6px 0; }
+nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 1px; height: 1px; background: var(--accent); transition: right .2s ease; }
+nav a:hover { color: var(--title); }
+nav a:hover::after { right: 0; }
+.pill > astro-island { display: inline-flex; align-items: center; }
+@media (max-width: 760px) {
+  .site-header { top: 10px; width: calc(100% - 16px); }
+  .pill { gap: 12px; padding: 8px 14px; }
+  .brand small { display: none; }
+  nav { gap: 14px; }
+  nav a { font-size: .58rem; letter-spacing: .08em; white-space: nowrap; }
+}
+</style>

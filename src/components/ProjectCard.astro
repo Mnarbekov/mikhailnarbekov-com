@@ -1,0 +1,12 @@
+---
+const { status, title, problem, role, result, href = '#', tags = [] } = Astro.props;
+---
+<a class="card project-card" href={href} aria-label={`${title} project card`}>
+  <p class="meta">{status}</p>
+  <h3>{title}</h3>
+  <p><strong>Problem:</strong> {problem}</p>
+  <p><strong>Role:</strong> {role}</p>
+  <p><strong>Result:</strong> {result}</p>
+  <div class="tags" aria-label="Tags">{tags.map((tag: string) => <span class="tag">{tag}</span>)}</div>
+</a>
+<style>.project-card { display: block; } .project-card p + p { margin-top: 12px; } .project-card strong { color: var(--title); font-weight: 650; }</style>

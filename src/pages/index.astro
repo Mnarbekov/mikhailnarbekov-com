@@ -1,0 +1,272 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCarousel from '../components/ProjectCarousel';
+---
+<BaseLayout>
+  <main id="top">
+    <Hero />
+    <section class="section personal-section" aria-labelledby="about-title">
+      <p class="eyebrow">Personal</p>
+      <h2 id="about-title" class="main-title">A practical AI learner with a business operator’s sense of what is useful.</h2>
+      <div class="two-column">
+        <div>
+          <p>I’m a Sydney-based Microsoft data and insights marketer, and a practical AI learner.</p>
+          <p>My background is in turning messy commercial questions into clearer decisions: dashboards, models, forecasts, customer insights, go-to-market programs, and operating rhythms. The common thread has always been translation — from business problem to useful system.</p>
+        </div>
+        <div>
+          <p>Lately, that system-building has expanded into AI-assisted tools. Some are for household life, some for health and reflection, some for content, and some for learning how modern AI workflows actually behave outside a demo.</p>
+          <p>The site is not a CV. LinkedIn can do that. This is a working notebook of the problems I’m choosing, the systems I’m shaping, and the lessons I’m learning as AI becomes part of everyday work.</p>
+        </div>
+      </div>
+      <div class="proof-strip" aria-label="Credibility summary">
+        <span>Microsoft data and insights marketer</span>
+        <span>15+ years product, marketing, analytics and operations</span>
+        <span>Azure Data Fundamentals</span>
+        <span>MBA AGSM</span>
+        <span>MITx Statistics &amp; Data Science</span>
+        <span>AI-assisted builder</span>
+      </div>
+    </section>
+    <section class="section" id="system" aria-labelledby="system-title">
+      <p class="eyebrow">System</p>
+      <h2 id="system-title" class="main-title">My personal AI operating system.</h2>
+      <p class="section-kicker">Behind the projects is a small personal operating system I call PKA. It is not a product I am selling. It is the way I organise work with AI: specialist agents, clear source-of-truth files, repeatable workflows, automation, and public-safe proof-of-work.</p>
+      <div class="two-column system-copy">
+        <div>
+          <h3>I own</h3>
+          <ul>
+            <li>problem selection and workflow direction;</li>
+            <li>product judgement, privacy boundaries and usefulness criteria;</li>
+            <li>testing in the real target medium;</li>
+            <li>deciding what is good enough to keep, change, or throw away.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>AI helps with</h3>
+          <ul>
+            <li>implementation drafts, code and configuration options;</li>
+            <li>documentation and debugging;</li>
+            <li>alternative approaches;</li>
+            <li>critique and edge-case checks.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="system-diagram">
+        <button type="button" class="system-diagram-zoom" aria-label="Open PKA diagram at full size">
+        <svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="system-diagram-title">
+          <title id="system-diagram-title">PKA studio map — brief enters from the left, result returns from the left</title>
+          <defs>
+            <marker id="arrowR" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="rgba(159,203,255,.5)"/>
+            </marker>
+            <marker id="arrowH" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="rgba(180,255,200,.5)"/>
+            </marker>
+          </defs>
+
+          <text x="100" y="34" text-anchor="middle" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#8f9aaa" letter-spacing="2.2">HUMAN</text>
+          <text x="285" y="34" text-anchor="middle" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#8f9aaa" letter-spacing="2.2">COORDINATION</text>
+          <text x="610" y="34" text-anchor="middle" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#8f9aaa" letter-spacing="2.2">SPECIALISTS</text>
+          <text x="965" y="34" text-anchor="middle" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#8f9aaa" letter-spacing="2.2">TOOLS · MEMORY</text>
+
+          <g stroke="rgba(226,236,246,.06)" stroke-width="1" fill="none">
+            <line x1="195" y1="50" x2="195" y2="580"/>
+            <line x1="385" y1="50" x2="385" y2="580"/>
+            <line x1="840" y1="50" x2="840" y2="580"/>
+          </g>
+
+          <g transform="translate(50 250)">
+            <rect x="0" y="0" width="120" height="120" rx="14" fill="rgba(180,255,200,.07)" stroke="rgba(180,255,200,.5)" stroke-width="1.2"/>
+            <text x="60" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#f8fbff">Me</text>
+            <text x="60" y="72" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="rgba(180,255,200,.9)">writes the brief</text>
+            <text x="60" y="88" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="rgba(180,255,200,.9)">makes decisions</text>
+            <text x="60" y="104" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="rgba(180,255,200,.9)">judges the output</text>
+          </g>
+          <line x1="175" y1="310" x2="225" y2="310" stroke="rgba(180,255,200,.55)" stroke-width="1.3" marker-end="url(#arrowH)"/>
+          <text x="200" y="298" text-anchor="middle" font-family="'SFMono-Regular', Consolas, monospace" font-size="8.5" fill="rgba(180,255,200,.7)" letter-spacing="1.4">BRIEF</text>
+          <path d="M 225 340 Q 200 380 175 360" stroke="rgba(159,203,255,.55)" stroke-width="1.3" fill="none" marker-end="url(#arrowR)"/>
+          <text x="200" y="392" text-anchor="middle" font-family="'SFMono-Regular', Consolas, monospace" font-size="8.5" fill="#9fcbff" letter-spacing="1.4">RESULT</text>
+
+          <g transform="translate(225 240)">
+            <rect x="0" y="0" width="150" height="140" rx="14" fill="rgba(159,203,255,.1)" stroke="rgba(159,203,255,.6)" stroke-width="1.3"/>
+            <text x="75" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#f8fbff">Orchestrator</text>
+            <text x="75" y="62" text-anchor="middle" font-family="'SFMono-Regular', Consolas, monospace" font-size="9" fill="#9fcbff" letter-spacing="1.6">DISPATCH</text>
+            <line x1="20" y1="74" x2="130" y2="74" stroke="rgba(159,203,255,.25)" stroke-width="1"/>
+            <text x="75" y="92" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" fill="#cfd6e0">parses brief</text>
+            <text x="75" y="108" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" fill="#cfd6e0">picks specialist</text>
+            <text x="75" y="124" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" fill="#cfd6e0">keeps context tidy</text>
+          </g>
+          <g stroke="rgba(159,203,255,.42)" stroke-width="1" fill="none">
+            <line x1="380" y1="260" x2="432" y2="155" marker-end="url(#arrowR)"/>
+            <line x1="380" y1="290" x2="432" y2="245" marker-end="url(#arrowR)"/>
+            <line x1="380" y1="310" x2="432" y2="335" marker-end="url(#arrowR)"/>
+            <line x1="380" y1="330" x2="432" y2="425" marker-end="url(#arrowR)"/>
+            <line x1="380" y1="360" x2="432" y2="525" marker-end="url(#arrowR)"/>
+          </g>
+
+          <g transform="translate(432 100)">
+            <rect x="0" y="0" width="400" height="110" rx="14" fill="rgba(159,203,255,.04)" stroke="rgba(159,203,255,.32)" stroke-width="1"/>
+            <text x="14" y="22" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#9fcbff" letter-spacing="1.6">KNOWLEDGE</text>
+            <g font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f2f7ff">
+              <g transform="translate(14 36)">
+                <rect x="0" y="0" width="110" height="56" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="55" y="22" text-anchor="middle">Researcher</text>
+                <text x="55" y="40" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">SOURCES</text>
+              </g>
+              <g transform="translate(138 36)">
+                <rect x="0" y="0" width="110" height="56" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="55" y="22" text-anchor="middle">Architect</text>
+                <text x="55" y="40" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">SHAPE</text>
+              </g>
+              <g transform="translate(262 36)">
+                <rect x="0" y="0" width="120" height="56" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="60" y="22" text-anchor="middle">Database dev</text>
+                <text x="60" y="40" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">SCHEMAS</text>
+              </g>
+            </g>
+          </g>
+
+          <g transform="translate(432 220)">
+            <rect x="0" y="0" width="400" height="92" rx="14" fill="rgba(159,203,255,.04)" stroke="rgba(159,203,255,.32)" stroke-width="1"/>
+            <text x="14" y="22" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#9fcbff" letter-spacing="1.6">PRODUCTION</text>
+            <g font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f2f7ff">
+              <g transform="translate(14 36)">
+                <rect x="0" y="0" width="186" height="44" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="93" y="18" text-anchor="middle">DevOps</text>
+                <text x="93" y="33" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">DEPLOY · TOOLING</text>
+              </g>
+              <g transform="translate(214 36)">
+                <rect x="0" y="0" width="172" height="44" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="86" y="18" text-anchor="middle">UI/UX designer</text>
+                <text x="86" y="33" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">VISUAL · TYPE</text>
+              </g>
+            </g>
+          </g>
+
+          <g transform="translate(432 320)">
+            <rect x="0" y="0" width="400" height="74" rx="14" fill="rgba(159,203,255,.04)" stroke="rgba(159,203,255,.32)" stroke-width="1"/>
+            <text x="14" y="22" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#9fcbff" letter-spacing="1.6">THINKING</text>
+            <g transform="translate(14 36)">
+              <rect x="0" y="0" width="372" height="26" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+              <text x="186" y="17" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f2f7ff">Analyst · brainstorm partner</text>
+            </g>
+          </g>
+
+          <g transform="translate(432 410)">
+            <rect x="0" y="0" width="400" height="92" rx="14" fill="rgba(159,203,255,.04)" stroke="rgba(159,203,255,.32)" stroke-width="1"/>
+            <text x="14" y="22" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#9fcbff" letter-spacing="1.6">LIFE</text>
+            <g font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f2f7ff">
+              <g transform="translate(14 36)">
+                <rect x="0" y="0" width="118" height="44" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="59" y="18" text-anchor="middle">Health</text>
+                <text x="59" y="33" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">SLEEP · TRAIN</text>
+              </g>
+              <g transform="translate(140 36)">
+                <rect x="0" y="0" width="118" height="44" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="59" y="18" text-anchor="middle">Finance</text>
+                <text x="59" y="33" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">ANALYSIS</text>
+              </g>
+              <g transform="translate(266 36)">
+                <rect x="0" y="0" width="120" height="44" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+                <text x="60" y="18" text-anchor="middle">Coach</text>
+                <text x="60" y="33" text-anchor="middle" font-size="9" fill="#8f9aaa" letter-spacing="1.4">PERSPECTIVE</text>
+              </g>
+            </g>
+          </g>
+
+          <g transform="translate(432 510)">
+            <rect x="0" y="0" width="400" height="74" rx="14" fill="rgba(159,203,255,.04)" stroke="rgba(159,203,255,.32)" stroke-width="1"/>
+            <text x="14" y="22" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="#9fcbff" letter-spacing="1.6">HIRING</text>
+            <g transform="translate(14 36)">
+              <rect x="0" y="0" width="372" height="26" rx="9" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.18)" stroke-width="1"/>
+              <text x="186" y="17" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f2f7ff">HR — adds specialists when a gap appears</text>
+            </g>
+          </g>
+
+          <g transform="translate(880 100)">
+            <rect x="0" y="0" width="270" height="220" rx="14" fill="rgba(255,200,140,.04)" stroke="rgba(255,200,140,.4)" stroke-width="1.2"/>
+            <text x="14" y="22" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="rgba(255,200,140,.85)" letter-spacing="1.6">SHARED TOOLS</text>
+            <g font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#f2f7ff">
+              <g transform="translate(14 42)">
+                <text x="0" y="0" font-family="Georgia, serif" font-size="14" fill="#f8fbff">Azure</text>
+                <text x="0" y="18" font-size="11" fill="#cfd6e0">LLM endpoints · n8n container</text>
+              </g>
+              <g transform="translate(14 92)">
+                <text x="0" y="0" font-family="Georgia, serif" font-size="14" fill="#f8fbff">n8n on Azure</text>
+                <text x="0" y="18" font-size="11" fill="#cfd6e0">scheduled workflows · webhooks</text>
+              </g>
+              <g transform="translate(14 142)">
+                <text x="0" y="0" font-family="Georgia, serif" font-size="14" fill="#f8fbff">GitHub</text>
+                <text x="0" y="18" font-size="11" fill="#cfd6e0">code · issues · CI · MCP</text>
+              </g>
+              <g transform="translate(14 192)">
+                <text x="0" y="0" font-family="Georgia, serif" font-size="13" fill="#f8fbff">PowerShell · CLI</text>
+              </g>
+            </g>
+          </g>
+
+          <g transform="translate(880 350)">
+            <rect x="0" y="0" width="270" height="220" rx="14" fill="rgba(226,236,246,.04)" stroke="rgba(226,236,246,.32)" stroke-width="1.2"/>
+            <text x="14" y="22" font-family="'SFMono-Regular', Consolas, monospace" font-size="9.5" fill="rgba(226,236,246,.75)" letter-spacing="1.6">LOCAL MEMORY</text>
+            <g font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#f2f7ff">
+              <g transform="translate(14 42)">
+                <text x="0" y="0" font-family="Georgia, serif" font-size="14" fill="#f8fbff">SQLite</text>
+                <text x="0" y="18" font-size="11" fill="#cfd6e0">pka.db</text>
+              </g>
+              <g transform="translate(14 110)">
+                <text x="0" y="0" font-family="Georgia, serif" font-size="14" fill="#f8fbff">Markdown · on disk</text>
+                <text x="0" y="18" font-size="11" fill="#cfd6e0">Knowledge/ · Compass docs</text>
+              </g>
+              <g transform="translate(14 168)">
+                <text x="0" y="0" font-family="Georgia, serif" font-size="14" fill="#f8fbff">OneDrive</text>
+                <text x="0" y="18" font-size="11" fill="#cfd6e0">apps data · backup mirror</text>
+              </g>
+            </g>
+          </g>
+        </svg>
+          <span class="system-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
+      </div>
+      <div class="system-lightbox" role="dialog" aria-modal="true" aria-label="PKA diagram enlarged">
+        <button type="button" class="system-lightbox-close" aria-label="Close enlarged diagram">×</button>
+        <div class="system-lightbox-svg-wrap"></div>
+        <p class="system-lightbox-hint" aria-hidden="true">Click outside or press Esc to close</p>
+      </div>
+    </section>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <p class="eyebrow">Projects</p>
+      <h2 id="projects-title" class="main-title">Small systems, real use, public-safe case notes.</h2>
+      <p class="section-kicker">Each project starts from a practical problem. Published work uses sanitized text, demo data, simplified diagrams and public-safe repositories rather than private source material.</p>
+      <ProjectCarousel client:load />
+    </section>
+  </main>
+  <footer class="footer"><span>© 2026 Misha Narbekov. All rights reserved.</span></footer>
+</BaseLayout>
+
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('.system-diagram-zoom');
+  const lightbox = document.querySelector<HTMLDivElement>('.system-lightbox');
+  const wrap = document.querySelector<HTMLDivElement>('.system-lightbox-svg-wrap');
+  const closeBtn = document.querySelector<HTMLButtonElement>('.system-lightbox-close');
+  if (btn && lightbox && wrap && closeBtn) {
+    const open = () => {
+      const svg = btn.querySelector('svg');
+      if (!svg) return;
+      wrap.replaceChildren(svg.cloneNode(true) as Node);
+      lightbox.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    };
+    const close = () => {
+      lightbox.classList.remove('is-open');
+      wrap.replaceChildren();
+      document.body.style.overflow = '';
+    };
+    btn.addEventListener('click', open);
+    closeBtn.addEventListener('click', (e) => { e.stopPropagation(); close(); });
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('is-open')) close();
+    });
+  }
+</script>

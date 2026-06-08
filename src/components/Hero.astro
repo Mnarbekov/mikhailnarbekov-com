@@ -1,0 +1,33 @@
+<section class="hero" id="personal" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <h1 id="hero-title" class="main-title title-sheen">Hi, I’m Mikhail. I’m exploring how AI can help with real work, real life, and the messy problems in between.</h1>
+    <p class="lead">This site is where I share what I’m learning, building, and testing: small AI-assisted systems, practical automations, and personal tools that solve real problems for real people.</p>
+    <p class="lead">I’m not an AI guru or a professional software engineer. I’m a business operator with 15+ years across product, marketing, analytics, and technical problem-solving, learning how to use AI well — with clear judgement, honest testing, and useful outcomes.</p>
+    <div class="hero-actions" aria-label="Primary links">
+      <a class="primary-link" href="#projects">View projects <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <aside class="portrait-card" aria-label="Portrait and positioning note">
+    <div class="portrait-frame">
+      <img src="/images/misha-profile-bw.jpg" alt="Mikhail Narbekov" class="portrait-img" width="532" height="800" loading="eager" />
+    </div>
+    <p>My focus is simple: choose worthwhile problems, shape the workflow, test the result, and use AI as a capable implementation partner without pretending it did not help.</p>
+  </aside>
+</section>
+<style>
+.hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: 48px; align-items: start; padding: 28px 0 22px; }
+.hero .main-title { font-size: clamp(2.08rem, 3.55vw, 2.95rem); }
+.portrait-card { justify-self: end; width: min(100%, 480px); border: 1px solid var(--card-border); border-radius: 30px; padding: 14px; background: var(--card-bg); box-shadow: 0 30px 120px rgba(0,0,0,.25); }
+.portrait-card p { margin: 14px 8px 4px; color: var(--text-soft); }
+.portrait-card .meta { margin-top: 18px; color: var(--accent); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; margin-top: 28px; }
+.hero-actions .primary-link { margin-top: 0; }
+.secondary-link { position: relative; color: var(--text-soft); font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; }
+.secondary-link::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -5px; height: 1px; background: var(--accent); transition: right .2s ease; }
+.secondary-link:hover { color: var(--title); }
+.secondary-link:hover::after { right: 0; }
+.portrait-frame { border-radius: 22px; border: 1px solid var(--hairline); line-height: 0; background: rgba(0,0,0,.16); }
+.portrait-img { width: 100%; height: auto; display: block; border-radius: 22px; object-fit: contain; }
+@media (max-width: 920px) { .hero { grid-template-columns: 1fr; padding-top: 24px; } .portrait-card { justify-self: start; max-width: 480px; } }
+@media (max-width: 520px) { .hero-copy, .portrait-card { width: 100%; max-width: 398px; } .hero .main-title { font-size: clamp(1.68rem, 6.8vw, 2.02rem); } }
+</style>
