@@ -85,13 +85,17 @@ main, section, .hero, .hero-copy { min-width: 0; max-width: 100%; }
 .system-copy { margin-top: 34px; }
 .system-diagram {
   margin-top: 40px;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  /* Locked dark surface regardless of theme — inline SVG uses dark-only colors */
+  background:
+    radial-gradient(ellipse 58% 42% at 82% -4%, rgba(108,164,220,.18), transparent 100%),
+    radial-gradient(circle at 16% 84%, rgba(39,59,82,.30), transparent 31%),
+    linear-gradient(135deg, #090b0f 0%, #141923 48%, #080a0d 100%);
+  border: 1px solid rgba(226,236,246,.13);
   border-radius: 22px;
   padding: 28px;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(18px);
+  color-scheme: dark;
 }
 .system-diagram::before {
   content: "";
@@ -127,16 +131,17 @@ main, section, .hero, .hero-copy { min-width: 0; max-width: 100%; }
 .system-diagram-zoom:hover .system-zoom-hint { opacity: 1; }
 .system-diagram-zoom:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
 .system-zoom-hint {
+  /* Locked dark — sits on dark diagram panel */
   position: absolute;
   bottom: 12px;
   right: 14px;
   padding: 6px 11px;
   background: rgba(11,13,16,.82);
-  color: var(--text-soft);
+  color: #c1ccda;
   font: 700 .62rem/1 var(--font-code);
   letter-spacing: .12em;
   text-transform: uppercase;
-  border: 1px solid var(--hairline);
+  border: 1px solid rgba(226,236,246,.13);
   border-radius: 999px;
   backdrop-filter: blur(10px);
   opacity: 0;
