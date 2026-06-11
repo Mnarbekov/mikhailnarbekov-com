@@ -34,6 +34,7 @@ const projects: Project[] = [
     result: 'A working private app; the public showcase uses demo data and sanitized screenshots.',
     tags: ['Published', 'GitHub', 'Demo data'],
     github: 'https://github.com/Mnarbekov/cadence-app',
+    medium: 'https://medium.com/@mikhail.narbekov/i-used-ai-to-build-a-training-app-i-would-actually-use-30df337b2d9d',
     screenshot: '/projects/screenshots/cadence-phone-session.png',
     diagram: '/projects/diagrams/cadence-loop.png',
   },
