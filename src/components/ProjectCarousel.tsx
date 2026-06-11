@@ -33,6 +33,7 @@ const projects: Project[] = [
     role: 'Misha designed the phone-based training loop and the public-safe explanation of an AI sport and health coach workflow.',
     result: 'A working private app; public showcase will use demo data and sanitized screenshots.',
     tags: ['Private system', 'Demo data planned'],
+    github: 'https://github.com/Mnarbekov/cadence-app',
     screenshot: '/projects/screenshots/cadence-phone-session.png',
     diagram: '/projects/diagrams/cadence-loop.png',
   },
