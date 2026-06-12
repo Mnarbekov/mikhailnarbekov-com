@@ -40,17 +40,18 @@ const projects: Project[] = [
   },
   {
     title: 'Journal',
-    status: 'Draft showcase',
+    status: 'GitHub showcase',
     problem: 'Paper was not always nearby, and Apple Notes became capture-and-forget rather than capture-and-return.',
     role: 'Misha shaped a private-first mobile capture flow and a bridge into laptop-based reflection.',
     result: 'A working private journal system; public case note can show structure without private entries.',
-    tags: ['Private-first', 'Reflection'],
+    tags: ['Private-first', 'Reflection', 'GitHub'],
+    github: 'https://github.com/Mnarbekov/journal',
     screenshot: '/projects/screenshots/journal-phone-capture.png',
     diagram: '/projects/diagrams/journal-bridge.png',
   },
   {
     title: 'My Life',
-    status: 'Draft showcase',
+    status: 'Showcase queued',
     problem: 'Personal records had value, but not enough usable context in one calm, searchable place.',
     role: 'Misha directed the local-first product shape across journals, ideas, schedules, books, people, meetings, and long-horizon context.',
     result: 'A working private laptop hub; public showcase will explain the model with safe examples.',
@@ -60,7 +61,7 @@ const projects: Project[] = [
   },
   {
     title: 'Family Briefing',
-    status: 'Draft showcase',
+    status: 'Showcase queued',
     problem: 'Household logistics are easy to miss when reminders, events, preparation needs, and weather checks live in different places.',
     role: 'Misha specified the morning briefing behaviour, concise output style, automation boundary, and safe public packaging.',
     result: 'A working private automation that delivers a short family briefing without exposing private calendar or message data.',
@@ -188,7 +189,7 @@ export default function ProjectCarousel() {
                 <span className="zoom-hint" aria-hidden="true">Click to enlarge</span>
               </button>
             ) : (
-              <div className="screenshot-placeholder"><span>Diagram pending</span></div>
+              <div className="screenshot-placeholder"><span>Diagram planned</span></div>
             )}
             {selected.screenshot ? (
               <button
@@ -201,7 +202,7 @@ export default function ProjectCarousel() {
                 <span className="zoom-hint" aria-hidden="true">Click to enlarge</span>
               </button>
             ) : (
-              <div className="screenshot-placeholder compact"><span>Screenshot pending</span></div>
+              <div className="screenshot-placeholder compact"><span>Screenshot planned</span></div>
             )}
           </div>
 
