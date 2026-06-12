@@ -81,7 +81,8 @@ main, section, .hero, .hero-copy { min-width: 0; max-width: 100%; }
 .two-column ul { margin: 0; padding-left: 20px; }
 .two-column li { margin: 0 0 10px; }
 .proof-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; max-width: 980px; border-top: 1px solid var(--rule); padding-top: 18px; }
-.proof-strip span { border: 1px solid var(--hairline); border-radius: 999px; padding: 7px 11px; color: var(--muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+.proof-strip span,
+.proof-strip a { border: 1px solid var(--hairline); border-radius: 999px; padding: 7px 11px; color: var(--muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; }
 .system-copy { margin-top: 34px; }
 .system-diagram {
   margin-top: 40px;
