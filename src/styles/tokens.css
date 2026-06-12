@@ -81,8 +81,9 @@ main, section, .hero, .hero-copy { min-width: 0; max-width: 100%; }
 .two-column ul { margin: 0; padding-left: 20px; }
 .two-column li { margin: 0 0 10px; }
 .proof-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; max-width: 980px; border-top: 1px solid var(--rule); padding-top: 18px; }
+.personal-section .proof-strip { margin: 0 0 34px; border-top: 0; padding-top: 0; }
 .proof-strip span,
-.proof-strip a { border: 1px solid var(--hairline); border-radius: 999px; padding: 7px 11px; color: var(--muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; }
+.proof-strip a { min-width: 0; border: 1px solid var(--hairline); border-radius: 999px; padding: 7px 11px; color: var(--muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; }
 .system-copy { margin-top: 34px; }
 .system-diagram {
   margin-top: 40px;
@@ -233,6 +234,8 @@ main, section, .hero, .hero-copy { min-width: 0; max-width: 100%; }
   .site-shell * { max-width: 100%; }
   .section-heading, .main-title { width: 100%; max-width: 100%; font-size: clamp(1.55rem, 6.3vw, 1.86rem); overflow-wrap: anywhere; word-break: break-word; }
   .lead, .section-kicker, p, li { width: 100%; max-width: 100%; font-size: .98rem; line-height: 1.58; overflow-wrap: anywhere; word-break: break-word; }
+  .proof-strip span,
+  .proof-strip a { max-width: 100%; white-space: normal; line-height: 1.35; overflow-wrap: anywhere; word-break: break-word; }
   .section { padding-top: 56px; }
   .two-column { grid-template-columns: 1fr; }
   .system-diagram { padding: 16px; }
