@@ -58,6 +58,7 @@ const projects: Project[] = [
     result: 'A working private laptop hub; the public showcase explains the model with safe examples.',
     tags: ['Local-first', 'Personal knowledge', 'GitHub'],
     github: 'https://github.com/Mnarbekov/my-life-laptop-app',
+    medium: 'https://medium.com/@mikhail.narbekov/i-had-a-lot-of-useful-data-but-no-place-to-use-it-so-i-built-one-bbb570df9029',
     screenshot: '/projects/screenshots/my-life-laptop-hub.png',
     diagram: '/projects/diagrams/my-life-hub.png',
   },
