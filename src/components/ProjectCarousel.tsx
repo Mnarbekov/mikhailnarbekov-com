@@ -70,6 +70,7 @@ const projects: Project[] = [
     result: 'A working private automation that delivers a short family briefing without exposing private calendar or message data.',
     tags: ['Automation', 'Private boundary', 'GitHub'],
     github: 'https://github.com/Mnarbekov/family-briefing-n8n',
+    medium: 'https://medium.com/@mikhail.narbekov/meet-mrs-maggie-the-ai-assistant-who-briefs-my-family-every-morning-5a590e3e0a00',
     screenshot: '/projects/screenshots/family-briefing-telegram.png',
     diagram: '/projects/diagrams/family-briefing-flow.png',
   },
