@@ -1,0 +1,62 @@
+---
+import StoicLayout from '../../layouts/StoicLayout.astro';
+---
+<StoicLayout
+  title="Privacy Policy — Everyday Stoic"
+  description="Privacy Policy for the Everyday Stoic iOS app."
+>
+  <main class="shell article">
+    <p class="eyebrow">Everyday Stoic</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: 19 July 2026</p>
+
+    <p>Everyday Stoic (&ldquo;the app&rdquo;) is built to be completely private. This policy explains, in plain terms, what the app does and does not do with information.</p>
+
+    <h2>Summary</h2>
+    <p>Everyday Stoic does not collect, store, or share any personal information. There is no account to create and no sign-up. The app has no server, and it does not use advertising, analytics, or tracking of any kind.</p>
+
+    <h2>Information we collect</h2>
+    <p>None. We do not collect your name, email address, location, contacts, device identifiers, or any other personal information. We have no servers that receive your data, and we cannot identify you.</p>
+
+    <h2>How the daily quote works</h2>
+    <p>The quote of the day is chosen entirely on your device from a list of quotes included in the app. The selection is based only on the calendar date. Nothing about what you view is sent anywhere.</p>
+
+    <h2>The home screen and lock screen widgets</h2>
+    <p>The widgets display the same daily quote and run entirely on your device. They do not collect information and do not communicate with any server.</p>
+
+    <h2>Advertising, analytics, and tracking</h2>
+    <p>Everyday Stoic contains no advertising, no analytics, and no tracking technologies. We do not build a profile of you and we do not follow you across apps or websites.</p>
+
+    <h2>Selling or sharing data</h2>
+    <p>We do not sell, rent, or share any personal information, because we do not collect any.</p>
+
+    <h2>Children&rsquo;s privacy</h2>
+    <p>The app does not collect personal information from anyone, including children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will update the effective date above and post the revised policy at this address.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions about this policy, contact <a href="mailto:support@mikhailnarbekov.com">support@mikhailnarbekov.com</a>.</p>
+  </main>
+</StoicLayout>
+
+<style>
+  .article { max-width: 720px; padding-top: 56px; }
+  .article .eyebrow {
+    color: var(--accent); font-size: 0.72rem; letter-spacing: 0.2em;
+    text-transform: uppercase; font-weight: 600; margin: 0;
+  }
+  .article h1 {
+    font-family: var(--serif); font-weight: 600; color: var(--ink);
+    font-size: clamp(2.1rem, 5vw, 2.8rem); letter-spacing: -0.02em;
+    line-height: 1.08; margin: 12px 0 8px;
+  }
+  .article .effective { color: var(--ink-muted); font-size: 0.95rem; margin: 0 0 30px; }
+  .article h2 {
+    font-family: var(--serif); font-weight: 600; color: var(--ink);
+    font-size: 1.5rem; letter-spacing: -0.01em; margin: 32px 0 10px;
+  }
+  .article p { color: var(--ink-muted); font-size: 1.04rem; margin: 0 0 16px; }
+  .article a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+</style>

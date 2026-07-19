@@ -1,0 +1,54 @@
+---
+import StoicLayout from '../../layouts/StoicLayout.astro';
+---
+<StoicLayout
+  title="Support — Everyday Stoic"
+  description="Support and help for the Everyday Stoic iOS app."
+>
+  <main class="shell article">
+    <p class="eyebrow">Everyday Stoic</p>
+    <h1>Support</h1>
+
+    <p>Everyday Stoic gives you one piece of Stoic wisdom each day, in the app or right on your home screen. There is no account and no setup. Open it whenever you want a quiet moment to think.</p>
+
+    <h2>How does the daily quote work?</h2>
+    <p>Each day you get a different quote, drawn from the great Stoic thinkers. Every quote is shown before any begins to repeat, so you get a full year of fresh reflections, one per day.</p>
+
+    <h2>How do I add the widget?</h2>
+    <p>Touch and hold an empty area of your home screen until the icons jiggle, tap the plus button in the corner, search for &ldquo;Everyday Stoic,&rdquo; choose a size, and add it. The widget shows the day&rsquo;s quote and updates itself each morning. You can also add it to your lock screen the same way.</p>
+
+    <h2>Does the widget match dark mode?</h2>
+    <p>Yes. The home screen widget has both light and dark styles and follows your phone&rsquo;s appearance automatically, so it always sits naturally with your home screen.</p>
+
+    <h2>Do I need an account?</h2>
+    <p>No. There is no sign-up and no login. Just open the app and read.</p>
+
+    <h2>Is it really free?</h2>
+    <p>Yes, completely free, with no ads and no purchases. It is free because that is the Stoic way: helping others is part of living well.</p>
+
+    <h2>Where is my data stored?</h2>
+    <p>Everything runs on your device. The app has no server and collects nothing about you. See our <a href="/everyday-stoic/privacy">Privacy Policy</a> for details.</p>
+
+    <h2>Need more help?</h2>
+    <p>Email us at <a href="mailto:support@mikhailnarbekov.com">support@mikhailnarbekov.com</a>. We aim to reply within a few business days.</p>
+  </main>
+</StoicLayout>
+
+<style>
+  .article { max-width: 720px; padding-top: 56px; }
+  .article .eyebrow {
+    color: var(--accent); font-size: 0.72rem; letter-spacing: 0.2em;
+    text-transform: uppercase; font-weight: 600; margin: 0;
+  }
+  .article h1 {
+    font-family: var(--serif); font-weight: 600; color: var(--ink);
+    font-size: clamp(2.1rem, 5vw, 2.8rem); letter-spacing: -0.02em;
+    line-height: 1.08; margin: 12px 0 20px;
+  }
+  .article h2 {
+    font-family: var(--serif); font-weight: 600; color: var(--ink);
+    font-size: 1.5rem; letter-spacing: -0.01em; margin: 32px 0 10px;
+  }
+  .article p { color: var(--ink-muted); font-size: 1.04rem; margin: 0 0 16px; }
+  .article a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+</style>
