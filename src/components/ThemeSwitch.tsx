@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
 export default function ThemeSwitch() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [theme, setTheme] = useState<'dark' | 'light'>('light');
 
   useEffect(() => {
     const stored = localStorage.getItem('b032-theme') as 'dark' | 'light' | null;
-    const next = stored || 'dark';
+    const next = stored || 'light';
     setTheme(next);
     document.documentElement.dataset.theme = next;
   }, []);
