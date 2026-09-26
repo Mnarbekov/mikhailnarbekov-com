@@ -1,0 +1,57 @@
+---
+import StoicLayout from '../../layouts/StoicLayout.astro';
+---
+<StoicLayout
+  title="Support — Marcus: Stoic AI Mentor"
+  description="Support and help for Marcus: Stoic AI Mentor, a private on-device Stoic teacher for iPhone."
+>
+  <main class="shell article">
+    <p class="eyebrow">Marcus: Stoic AI Mentor</p>
+    <h1>Support</h1>
+
+    <p>Marcus is a Stoic teacher that lives entirely on your iPhone. Ask anything in your own words and Marcus answers as a teacher of Stoic virtue. There is no account and no setup. Open it whenever you want to think something through.</p>
+
+    <h2>How do I talk to Marcus?</h2>
+    <p>Open the Teacher tab, type a question or a worry in your own words, and tap Send. You can also tap a suggested prompt like &ldquo;Help me respond calmly&rdquo; or &ldquo;Untangle a worry&rdquo; to begin.</p>
+
+    <h2>Does it work offline?</h2>
+    <p>Yes. The conversation runs on your device using Apple&rsquo;s on-device intelligence, so it works in airplane mode and with no signal. Nothing you write leaves your iPhone.</p>
+
+    <h2>Why do I need a recent iPhone?</h2>
+    <p>The teacher uses Apple&rsquo;s on-device model, which requires an iPhone with Apple Intelligence (iPhone 15 Pro or newer) running a recent version of iOS. On older devices the conversation feature is not available.</p>
+
+    <h2>What is the medallion?</h2>
+    <p>The Medal tab holds a memento mori medallion, a quiet reminder that your time is finite. Tap Flip to turn it and sit with the thought.</p>
+
+    <h2>Do I need an account?</h2>
+    <p>No. There is no sign-up and no login. Just open the app and start.</p>
+
+    <h2>Is it really free?</h2>
+    <p>Yes, completely free, with no ads and no purchases.</p>
+
+    <h2>Where is my data stored?</h2>
+    <p>Everything runs on your device. The app has no server and collects nothing about you. See our <a href="/marcus/privacy">Privacy Policy</a> for details.</p>
+
+    <h2>Need more help?</h2>
+    <p>Email us at <a href="mailto:support@mikhailnarbekov.com">support@mikhailnarbekov.com</a>. We aim to reply within a few business days.</p>
+  </main>
+</StoicLayout>
+
+<style>
+  .article { max-width: 720px; padding-top: 56px; }
+  .article .eyebrow {
+    color: var(--accent); font-size: 0.72rem; letter-spacing: 0.2em;
+    text-transform: uppercase; font-weight: 600; margin: 0;
+  }
+  .article h1 {
+    font-family: var(--serif); font-weight: 600; color: var(--ink);
+    font-size: clamp(2.1rem, 5vw, 2.8rem); letter-spacing: -0.02em;
+    line-height: 1.08; margin: 12px 0 20px;
+  }
+  .article h2 {
+    font-family: var(--serif); font-weight: 600; color: var(--ink);
+    font-size: 1.5rem; letter-spacing: -0.01em; margin: 32px 0 10px;
+  }
+  .article p { color: var(--ink-muted); font-size: 1.04rem; margin: 0 0 16px; }
+  .article a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+</style>
